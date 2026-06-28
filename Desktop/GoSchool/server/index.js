@@ -1,7 +1,5 @@
 const express=require('express'),cors=require('cors'),path=require('path'),app=express();
 const {Pool}=require('pg');
-const fetch=(...args)=>import('node-fetch').then(({default:f})=>f(...args));
-
 const SECRET='GOSCHOOL_ADMIN_2025';
 let pool=null;
 if(process.env.DATABASE_URL){
